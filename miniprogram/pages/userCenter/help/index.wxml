@@ -1,0 +1,8 @@
+<!--pages/help/help.wxml-->
+<view class='help-cont'>
+  <wux-accordion-group title="Q&A">
+    <wux-accordion title="如何入驻小程序" content="你猜猜"></wux-accordion>
+    <wux-accordion title="如何入驻小程序 2" content="你猜猜"></wux-accordion>
+    <wux-accordion title="如何入驻小程序 3" content="你猜猜"></wux-accordion>
+  </wux-accordion-group>
+</view>

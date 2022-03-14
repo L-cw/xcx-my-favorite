@@ -1,0 +1,183 @@
+/**app.wxss**/
+
+@import "resources/iconfont/iconfont.wxss";
+@import './components/wux/styles/index.wxss';
+@import 'resources/css/base64.wxss';
+.container {
+  width: 100%;
+  padding: 20rpx 30rpx;
+  background-color: #f8f8f8;
+}
+page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #fff; */
+  background-color: #f8f8f8;
+}
+view, navigator {
+  box-sizing: border-box;
+}
+/* 一行超出省略 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+/* 二行超出省略 */
+.ellipsis-2lines {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/* 块样式 */
+.item-box {
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding: 30rpx 20rpx;
+  background-color: #fff;
+  background-size: 100%;
+  /* box-shadow: 0 0 24px 0 rgba(101,101,101,0.10); */
+}
+/* 带竖线的标题 */
+.title-with-vertical-line {
+  position: relative;
+  width: 100%;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+  color: #454CA3;
+  text-align: left;
+  
+}
+.title-with-vertical-line:before {
+  position: absolute;
+  left: 0;
+  top: 0rpx;
+  content: '';
+  width: 4rpx;
+  height: 30rpx;
+  background-color: #454CA3;
+}
+/* 组件展示区域 */
+.component-display-box {
+  width: 100%;
+  background-color: #fff;
+}
+/* 1像素边框 */
+.border-b, .border-t, .border-l, .border-r {
+  position: relative;
+}
+/* 下边框 */
+.border-b:after { 
+  position: absolute; 
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #EDEDED;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+/* 上边框 */
+.border-t:after { 
+  position: absolute; 
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #EDEDED;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+/* 左边框 */
+.border-l:after { 
+  position: absolute; 
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #EDEDED;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+/* 右边框 */
+.border-r:after { 
+  position: absolute; 
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #EDEDED;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+/* 订阅号列表样式 */
+.subs-list {
+  width: 100%;
+  flex: 1;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.subs-list .subs-item {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+}
+.subs-list .subs-item .left {
+  width: 100rpx;
+}
+.subs-list .subs-item .left .img-box {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.subs-list .subs-item .left .img-box image {
+  width: 100%;
+  height: 100%;
+}
+.subs-list .subs-item .middle {
+  flex: 1;
+  padding-left: 20rpx;
+  overflow: hidden;
+}
+.subs-list .subs-item .middle .name {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  color: #333;
+  font-weight: bold;
+}
+.subs-list .subs-item .middle .desc {
+  font-size: 28rpx;
+  color: #666;
+}
+.subs-list .subs-item .right {
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.subs-list .subs-item .right .followed {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  padding: 0 20rpx;
+}

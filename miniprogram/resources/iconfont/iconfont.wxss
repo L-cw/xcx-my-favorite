@@ -1,0 +1,94 @@
+@import "./font.wxss";
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fabiaoyouji:before {
+  content: "\e60e";
+}
+
+.icon-fonts-shouye:before {
+  content: "\e60a";
+}
+
+.icon-tubiaozhizuomoban:before {
+  content: "\e610";
+}
+
+.icon-liebiaorongqi:before {
+  content: "\e698";
+}
+
+.icon-fanhui:before {
+  content: "\e624";
+}
+
+.icon-dianzan:before {
+  content: "\e61f";
+}
+
+.icon-xiayibu:before {
+  content: "\e6bd";
+}
+
+.icon-xiayibu-copy:before {
+  content: "\e6c1";
+}
+
+.icon-quxiao:before {
+  content: "\e6c2";
+}
+
+.icon-tishi:before {
+  content: "\e6c3";
+}
+
+.icon-tixian:before {
+  content: "\e67a";
+}
+
+.icon-erweima:before {
+  content: "\e67b";
+}
+
+.icon-fenxiang:before {
+  content: "\e67c";
+}
+
+.icon-fuzhi:before {
+  content: "\e67f";
+}
+
+.icon-bianji:before {
+  content: "\e63e";
+}
+
+.icon-tianjia:before {
+  content: "\e63f";
+}
+
+.icon-dizhi:before {
+  content: "\e640";
+}
+
+.icon-fenxianglingjiang:before {
+  content: "\e641";
+}
+
+.icon-huojiangmingdan:before {
+  content: "\e642";
+}
+
+.icon-danchuang-quxiao:before {
+  content: "\e682";
+}
+
+.icon-xiala:before {
+  content: "\e643";
+}
+

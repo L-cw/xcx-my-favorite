@@ -1,0 +1,60 @@
+<!--pages/profile/profile.wxml-->
+<view class='profile-page'>
+  <view class='user-info'>
+    <view class="img-cont">
+      <image src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '/resources/images/default/user-img.png'}}" />
+    </view>
+    <view wx:if="{{hadAuthFlag}}" class="nickname-box">{{userInfo.nickName}}</view>
+    <button
+      wx:else
+      class="login-btn"
+      open-type="getUserInfo"
+      bindgetuserinfo="bindGetUserInfo">微信登陆</button>
+  </view>
+  <view class="menu-list">
+    <view
+      class="menu-item border-b"
+      data-url="/pages/userCenter/help/help"
+      bindtap="goPage"
+      hover-class="none">
+      <view class="icon"><text class="iconfont icon-huojiangmingdan"></text></view>
+      <view class="page-name">Q&A</view>
+      <view class="right-arrow"><text class="iconfont icon-xiayibu"></text></view>
+    </view>
+    <view
+      class="menu-item border-b"
+      data-url="/pages/components/list/list"
+      bindtap="goPage"
+      hover-class="none">
+      <view class="icon"><text class="iconfont icon-huojiangmingdan"></text></view>
+      <view class="page-name">组件列表</view>
+      <view class="right-arrow"><text class="iconfont icon-xiayibu"></text></view>
+    </view>
+    <view
+      class="menu-item border-b"
+      data-url="/pages/userCenter/apply/apply"
+      bindtap="goPage"
+      hover-class="none">
+      <view class="icon"><text class="iconfont icon-huojiangmingdan"></text></view>
+      <view class="page-name">申请入驻</view>
+      <view class="right-arrow"><text class="iconfont icon-xiayibu"></text></view>
+    </view>
+    <view
+      wx:if="{{isManager}}"
+      class="menu-item border-b"
+      data-url="/pages/userCenter/manageSubs/manage"
+      bindtap="goPage"
+      hover-class="none">
+      <view class="icon"><text class="iconfont icon-huojiangmingdan"></text></view>
+      <view class="page-name">管理订阅号</view>
+      <view class="right-arrow"><text class="iconfont icon-xiayibu"></text></view>
+    </view>
+    <view
+      class="menu-item border-b"
+      hover-class="none">
+      <view class="icon"><text class="iconfont icon-huojiangmingdan"></text></view>
+      <button open-type="contact" class="page-name contact-btn">联系我</button>
+      <view class="right-arrow"><text class="iconfont icon-xiayibu"></text></view>
+    </view>
+  </view>
+</view>
